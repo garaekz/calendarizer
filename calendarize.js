@@ -76,7 +76,7 @@ class Calendarizer extends HTMLElement {
     return `${d.y}${d.m}${d.d}T${d.h}${d.n}:00`;
   }
   outlookDateFormat = (dt) => {
-    const d = this.parseDate(dt).
+    const d = this.parseDate(dt)
     return `${d.y}-${d.m}-${d.d}T${d.h}:${d.n}:00`;
   }
   lbr = (str) => {
@@ -208,14 +208,16 @@ class Calendarizer extends HTMLElement {
       }
     };
 
-    document.addEventListener('click', (event) => {
-      if (this.__button == event.path[0]) {
+    document.addEventListener("click", (event) => {
+      const isButtonClicked = event.composedPath().includes(this.__button);
+      const isDropdownOpen = this.__opened != null;
+      if (isButtonClicked) {
         handleDropdown(this.__button);
-      } else if (this.__opened) {
+      } else if (isDropdownOpen) {
         toggleVisibility(this.__opened);
         this.__opened = null;
       }
-    });  
+    });
   }
   attributeChangedCallback(attr, oldVal, newVal) {
     if (oldVal) {
