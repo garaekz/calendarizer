@@ -1,6 +1,6 @@
 {
-  "name": "calendarizer-io",
-  "version": "1.0.0",
+  "name": "calendarizer",
+  "version": "1.0.1",
   "description": "Add to calendar button as a custom element",
   "author": "David Garay",
   "license": "MIT",

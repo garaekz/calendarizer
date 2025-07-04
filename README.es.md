@@ -1,6 +1,6 @@
 # 📅 Calendarizer (Español)
 
-**Calendarizer** es un Web Component ligero y sin dependencias (`<calendarizer-io>`) que permite a los usuarios agregar eventos a su calendario favorito: **Google**, **Outlook**, **Yahoo** o descargar un archivo `.ics` compatible con **Apple Calendar**, Outlook de escritorio y otros.
+**Calendarizer** es un Web Component ligero y sin dependencias (`<calendarizer>`) que permite a los usuarios agregar eventos a su calendario favorito: **Google**, **Outlook**, **Yahoo** o descargar un archivo `.ics` compatible con **Apple Calendar**, Outlook de escritorio y otros.
 
 Totalmente personalizable. Con temas integrados o sin estilos. Listo para usarse.
 
@@ -23,7 +23,7 @@ O usa la versión minificada (CDN o local):
 ### 2. Usa el componente
 
 ```html
-<calendarizer-io
+<calendarizer
   title="Lanzamiento de Producto"
   date-start="2025-08-01T09:00"
   date-end="2025-08-01T10:30"
@@ -117,7 +117,7 @@ pnpm run build --all --no-minify
 Se puede usar en React, Vue, Svelte, Astro y cualquier framework moderno:
 
 ```jsx
-<calendarizer-io
+<calendarizer
   title="Reunión de Lanzamiento"
   date-start="2025-08-01T15:00"
   date-end="2025-08-01T16:00"

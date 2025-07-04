@@ -5,10 +5,10 @@
 [![Calendar Support](https://img.shields.io/badge/calendar-Google%20%7C%20Outlook%20%7C%20ICS-blue)](#)
 [![Web Component](https://img.shields.io/badge/web--component-native-orange)](https://developer.mozilla.org/en-US/docs/Web/Web_Components)
 [![Themes](https://img.shields.io/badge/themes-6%20built--in-purple)](#)
-[![Minified Size](https://img.shields.io/bundlephobia/minzip/calendarizer-io?label=min%20size)](https://bundlephobia.com/package/calendarizer-io)
+[![Minified Size](https://img.shields.io/bundlephobia/minzip/calendarizer?label=min%20size)](https://bundlephobia.com/package/calendarizer)
 [![Made by David Garay](https://img.shields.io/badge/made%20by-David%20Garay-%23e91e63)](https://dagacoding.com)
 
-**Calendarizer** is a lightweight, zero-dependency Web Component (`<calendarizer-io>`) that lets users instantly add events to their favorite calendar apps: **Google**, **Outlook**, **Yahoo**, or download a universal `.ics` file compatible with **Apple Calendar**, **Outlook Desktop**, and more.
+**Calendarizer** is a lightweight, zero-dependency Web Component (`<calendarizer>`) that lets users instantly add events to their favorite calendar apps: **Google**, **Outlook**, **Yahoo**, or download a universal `.ics` file compatible with **Apple Calendar**, **Outlook Desktop**, and more.
 
 Fully customizable. Themed or theme-free. Plug & play.
 
@@ -33,7 +33,7 @@ Or use a minified version (e.g. CDN):
 ### 2. Add the component
 
 ```html
-<calendarizer-io
+<calendarizer
   title="Product Launch"
   date-start="2025-08-01T09:00"
   date-end="2025-08-01T10:30"
@@ -127,7 +127,7 @@ pnpm run build --all --no-minify
 Works seamlessly in any modern frontend stack:
 
 ```jsx
-<calendarizer-io
+<calendarizer
   title="Launch Meeting"
   date-start="2025-08-01T15:00"
   date-end="2025-08-01T16:00"

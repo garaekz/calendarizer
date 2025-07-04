@@ -4,7 +4,7 @@
 })((function () { 'use strict';
 
   /*!
-   * calendarizer-io v1.0.0
+   * calendarizer v1.0.1
    * (c) 2025 David Garay
    * Released under the MIT License
    */
@@ -210,7 +210,7 @@
         "VERSION:2.0",
         "PRODID:-//Calendarizer//ES",
         "BEGIN:VEVENT",
-        `UID:${Date.now()}@calendarizer.io`,
+        `UID:${Date.now()}@calendarizer`,
         `DTSTAMP:${new Date().toISOString().replace(/[-:]/g, "").split(".")[0]}Z`,
         `SUMMARY:${this.escapeICS(this.title)}`,
         `DESCRIPTION:${this.escapeICS(cleanContent)}`,
@@ -383,8 +383,8 @@
   }
 
   function init() {
-    if (!customElements.get("calendarizer-io")) {
-      customElements.define("calendarizer-io", Calendarizer);
+    if (!customElements.get("calendarizer")) {
+      customElements.define("calendarizer", Calendarizer);
     }
   }
 
