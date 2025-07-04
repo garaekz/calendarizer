@@ -1,0 +1,48 @@
+@import url('./base.css');
+
+.btn-cal-dropdown {
+  background-color: rgba(40, 40, 40, 0.8);
+  color: #eee;
+  border: 0.0625em solid rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(0.5em);
+  font-family: 'Inter', sans-serif;
+}
+
+.btn-cal-dropdown:hover {
+  background-color: rgba(60, 60, 60, 0.85);
+  box-shadow: 0 0 0.5em rgba(255, 255, 255, 0.08);
+}
+
+/* Menú */
+.dropdown-cal-menu {
+  background-color: rgba(20, 20, 20, 0.95);
+  border: 0.0625em solid rgba(255, 255, 255, 0.08);
+  border-radius: 0.75em;
+  backdrop-filter: blur(0.75em);
+  box-shadow: 0 1em 2em rgba(0, 0, 0, 0.6);
+  color: #eee;
+}
+
+/* Elementos del menú */
+.dropdown-cal-menu li {
+  font-size: 0.9375em;
+  font-family: 'Inter', sans-serif;
+  color: #ddd;
+  margin: 0;
+  padding: 0;
+}
+
+.dropdown-cal-menu a {
+  display: block;
+  padding: 0.75em 1.25em;
+  color: #ccc;
+  text-decoration: none;
+  border-radius: 0.5em;
+  transition: background 0.2s ease, box-shadow 0.2s ease;
+}
+
+.dropdown-cal-menu a:hover {
+  background-color: rgba(80, 80, 80, 0.4);
+  box-shadow: 0 0 0.5em rgba(255, 255, 255, 0.05);
+  text-decoration: none;
+}

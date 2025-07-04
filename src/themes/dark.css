@@ -1,0 +1,26 @@
+@import url('./base.css');
+
+.btn-cal-dropdown {
+  background: #1c1c1f;
+  color: #f5f5f5;
+  border: 1px solid #6e6cfb;
+}
+
+.btn-cal-dropdown:hover {
+  background: #6e6cfb;
+  color: #ffffff;
+}
+
+.dropdown-cal-menu {
+  background-color: #1c1c1f;
+  border: 1px solid #2e2e32;
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.5);
+}
+
+.dropdown-cal-menu a {
+  color: #c3c7ff;
+}
+
+.dropdown-cal-menu li:hover {
+  background-color: #2c2e36;
+}
