@@ -1,0 +1,34 @@
+{
+  "name": "calendarizer-io",
+  "version": "1.0.0",
+  "description": "Add to calendar button as a custom element",
+  "author": "David Garay",
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "build": "node scripts/build.js",
+    "build:help": "node scripts/build.js --help",
+    "build:core": "node scripts/build.js --core",
+    "build:all": "node scripts/build.js --all --default=dark",
+    "build:theme": "node scripts/build.js --theme=warm",
+    "build:theme:neon": "node scripts/build.js --theme=neon",
+    "build:theme:dark": "node scripts/build.js --theme=dark",
+    "build:theme:smoke": "node scripts/build.js --theme=smoke",
+    "build:full": "node scripts/build.js --mode=full",
+    "build:full:dark": "node scripts/build.js --default=dark --mode=full",
+    "build:full:neon": "node scripts/build.js --default=neon --mode=full",
+    "build:dev": "node scripts/build.js --all --no-minify",
+    "dev": "npm run build:dev"
+  },
+  "devDependencies": {
+    "@rollup/plugin-node-resolve": "^16.0.1",
+    "@rollup/plugin-replace": "^6.0.2",
+    "@rollup/plugin-terser": "^0.4.4",
+    "cssnano": "^7.0.7",
+    "postcss": "^8.5.6",
+    "postcss-import": "^16.1.1",
+    "rollup": "^4.44.1",
+    "rollup-plugin-postcss": "^4.0.2",
+    "rollup-plugin-string": "^3.0.0"
+  }
+}
