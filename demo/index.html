@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calendarizer Demo</title>
+
+    <!-- Prevent theme flash -->
+    <script src="./assets/js/unflash.js"></script>
+    <!-- Optional: Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <link href="./assets/css/styles.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <header class="theme-switcher">
+      <button id="theme-toggler" aria-label="Toggle Theme">🌓</button>
+    </header>
+    <h1>📅 Calendarizer Demo</h1>
+    <p>Powered by <code>calendarizer.min.js</code> with all themes embedded.</p>
+
+    <div class="wrapper">
+      <section>
+        <h2>🎨 Light Theme</h2>
+        <p class="theme-name">theme="light"</p>
+        <calendarizer-io
+          theme="light"
+          button="Add to Calendar"
+          title="Product Launch"
+          date-start="2025-07-03T14:00:00"
+          date-end="2025-07-03T15:00:00"
+          timezone="America/Mexico_City"
+          location="CDMX"
+          organizer="mailto:test@calendarizer.io"
+          content="🚀 We're launching something amazing!"
+        ></calendarizer-io>
+      </section>
+
+      <section>
+        <h2>🌙 Dark Theme</h2>
+        <p class="theme-name">theme="dark"</p>
+        <calendarizer-io
+          theme="dark"
+          button="Add to Calendar"
+          title="Late Night Q&A"
+          date-start="2025-07-04T20:00:00"
+          date-end="2025-07-04T21:00:00"
+          timezone="America/Mexico_City"
+          location="Online"
+          organizer="mailto:test@calendarizer.io"
+          content="An evening session to answer all your questions."
+        ></calendarizer-io>
+      </section>
+
+      <section>
+        <h2>🌡 Warm Theme</h2>
+        <p class="theme-name">theme="warm"</p>
+        <calendarizer-io
+          theme="warm"
+          button="Add to Calendar"
+          title="Fireside Chat"
+          date-start="2025-07-05T17:00:00"
+          date-end="2025-07-05T18:00:00"
+          timezone="America/Mexico_City"
+          location="Virtual"
+          organizer="mailto:test@calendarizer.io"
+          content="🔥 Intimate conversation with our founder."
+        ></calendarizer-io>
+      </section>
+
+      <section>
+        <h2>🧼 Smoke Theme</h2>
+        <p class="theme-name">theme="smoke"</p>
+        <calendarizer-io
+          theme="smoke"
+          button="Add to Calendar"
+          title="Design Review"
+          date-start="2025-07-06T12:00:00"
+          date-end="2025-07-06T13:00:00"
+          timezone="America/Mexico_City"
+          location="HQ Office"
+          organizer="mailto:test@calendarizer.io"
+          content="A clean and calm visual experience."
+        ></calendarizer-io>
+      </section>
+
+      <section>
+        <h2>💡 Neon Theme</h2>
+        <p class="theme-name">theme="neon"</p>
+        <calendarizer-io
+          theme="neon"
+          button="Add to Calendar"
+          title="Hackathon Kickoff"
+          date-start="2025-07-07T09:00:00"
+          date-end="2025-07-07T10:00:00"
+          timezone="America/Mexico_City"
+          location="Dev Center"
+          organizer="mailto:test@calendarizer.io"
+          content="💻 Bright lights, brilliant minds."
+        ></calendarizer-io>
+      </section>
+
+      <section>
+        <h2>🍦 Soft Theme</h2>
+        <p class="theme-name">theme="soft"</p>
+        <calendarizer-io
+          theme="soft"
+          button="Add to Calendar"
+          title="Mental Health Session"
+          date-start="2025-07-08T10:00:00"
+          date-end="2025-07-08T11:00:00"
+          timezone="America/Mexico_City"
+          location="Wellness Room"
+          organizer="mailto:test@calendarizer.io"
+          content="Gentle theme for peaceful topics."
+        ></calendarizer-io>
+      </section>
+      <section>
+        <h2>🌟 Default Theme</h2>
+        <p class="theme-name">No theme added, default: <code>dark</code></p>
+        <calendarizer-io
+          button="Add to Calendar"
+          title="Weekly Sync"
+          date-start="2025-07-09T11:00:00"
+          date-end="2025-07-09T12:00:00"
+          timezone="America/Mexico_City"
+          location="Conference Room A"
+          organizer="mailto:test@calendarizer.local"
+          content="Weekly team sync to discuss progress and challenges."
+        ></calendarizer-io>
+      </section>
+    </div>
+    <footer>
+      <p>
+        Made with ❤️ by
+        <a href="https://dagacoding.com" target="_blank">David Garay 🇲🇽</a>
+        |
+        <a href="https://github.com/garaekz/calendarizer" target="_blank"
+          >GitHub</a
+        >
+      </p>
+    </footer>
+    <script src="./assets/js/main.js" defer></script>
+    <!-- Calendarizer Full with Embedded Themes -->
+    <script src="../dist/calendarizer.min.js" type="module" defer></script>
+  </body>
+</html>
