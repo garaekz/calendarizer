@@ -6,6 +6,13 @@ import fs from "fs";
 import postCssProcessor from "postcss";
 import postcssImport from "postcss-import";
 import cssnano from "cssnano";
+import pkg from "./package.json" with { type: "json" };
+
+const banner = `/*!
+ * ${pkg.name} v${pkg.version}
+ * (c) ${new Date().getFullYear()} ${pkg.author}
+ * Released under the ${pkg.license} License
+ */`;
 
 const themes = ["light", "dark", "warm", "smoke", "neon", "soft"];
 const dist = (name) => `dist/${name}`;
@@ -119,6 +126,7 @@ const createBuild = (config) => {
         file: dist(filename),
         format: type === "umd" ? "umd" : "esm",
         ...(type === "umd" && { name: "Calendarizer" }),
+        banner,
       },
       plugins: [
         postcss({

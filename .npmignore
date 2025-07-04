@@ -1,0 +1,15 @@
+demo/
+scripts/
+.vscode/
+node_modules/
+test/
+__tests__/
+coverage/
+
+rollup.config.js
+tsconfig.json
+vite.config.js
+*.log
+
+.DS_Store
+Thumbs.db

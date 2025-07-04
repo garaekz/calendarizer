@@ -1,5 +1,5 @@
 /*!
- * calendarizer v1.0.1
+ * calendarizer v1.0.2
  * (c) 2025 David Garay
  * Released under the MIT License
  */

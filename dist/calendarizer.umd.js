@@ -1,13 +1,13 @@
+/*!
+ * calendarizer v1.0.2
+ * (c) 2025 David Garay
+ * Released under the MIT License
+ */
 (function (factory) {
   typeof define === 'function' && define.amd ? define(factory) :
   factory();
 })((function () { 'use strict';
 
-  /*!
-   * calendarizer v1.0.1
-   * (c) 2025 David Garay
-   * Released under the MIT License
-   */
   class Calendarizer extends HTMLElement {
     constructor() {
       super();

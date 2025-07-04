@@ -1,8 +1,3 @@
-/*!
- * calendarizer v1.0.1
- * (c) 2025 David Garay
- * Released under the MIT License
- */
 class Calendarizer extends HTMLElement {
   constructor() {
     super();

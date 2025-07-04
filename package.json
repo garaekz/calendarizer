@@ -1,10 +1,31 @@
 {
   "name": "calendarizer",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Add to calendar button as a custom element",
   "author": "David Garay",
   "license": "MIT",
   "type": "module",
+  "main": "dist/calendarizer.min.js",
+  "module": "dist/calendarizer.min.js",
+  "exports": {
+    ".": {
+      "import": "./dist/calendarizer.min.js",
+      "require": "./dist/calendarizer.min.js"
+    },
+    "./core": "./dist/calendarizer.core.min.js",
+    "./dark": "./dist/calendarizer.dark.min.js",
+    "./neon": "./dist/calendarizer.neon.min.js",
+    "./smoke": "./dist/calendarizer.smoke.min.js",
+    "./warm": "./dist/calendarizer.warm.min.js",
+    "./soft": "./dist/calendarizer.soft.min.js",
+    "./light": "./dist/calendarizer.light.min.js"
+  },
+  "files": [
+    "dist/",
+    "src/",
+    "README.md",
+    "LICENSE"
+  ],
   "scripts": {
     "build": "node scripts/build.js",
     "build:help": "node scripts/build.js --help",
@@ -20,6 +41,23 @@
     "build:dev": "node scripts/build.js --all --no-minify",
     "dev": "npm run build:dev"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/garaekz/calendarizer.git"
+  },
+  "homepage": "https://garaekz.github.io/calendarizer/",
+  "keywords": [
+    "calendar",
+    "add to calendar",
+    "web component",
+    "custom element",
+    "event button",
+    "google calendar",
+    "outlook",
+    "ics",
+    "calendar export",
+    "html calendar button"
+  ],
   "devDependencies": {
     "@rollup/plugin-node-resolve": "^16.0.1",
     "@rollup/plugin-replace": "^6.0.2",
